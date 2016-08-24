@@ -10,7 +10,8 @@ If we press *upload* we'll see there's some problems with this:
 The Arduino IDE checks the code to look for errors and it will complain if there are any issues. Finding  **errors** and **fixing errors** are a major part of programming and its very helpful for our development environment to catch these errors. (IDE stands for Integrated Development Environment).    You can see that with our natural human text the IDE is not happy:
 
 ```
-Put Error Code HERE
+example how to make the change !!
+
 ```
 ###Learning robot lingo
 Machines do not yet speak English, Spanish, or other human languages.   Programming languages are made to communicate with machines and there are many programming languages that can be learnt.   Fortunately learning programming languages is much easier than learning a  languages, and it doesn't need to take long to learn the language of robots. 
