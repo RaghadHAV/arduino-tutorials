@@ -10,8 +10,7 @@ If we press *upload* we'll see there's some problems with this:
 The Arduino IDE checks the code to look for errors and it will complain if there are any issues. Finding  **errors** and **fixing errors** are a major part of programming and its very helpful for our development environment to catch these errors. (IDE stands for Integrated Development Environment).    You can see that with our natural human text the IDE is not happy:
 
 ```
-example how to make the change !!
-
+Arduino_tutorials.ino:1:1: error: ‘What’ does not name a type
 ```
 ###Learning robot lingo
 Machines do not yet speak English, Spanish, or other human languages.   Programming languages are made to communicate with machines and there are many programming languages that can be learnt.   Fortunately learning programming languages is much easier than learning a  languages, and it doesn't need to take long to learn the language of robots. 
@@ -27,7 +26,11 @@ In the world of humans you don't need to speak or write correctly to be understo
 So the IDE did not like our human readable text so now lets see what happens if we simply upload acompletley blank document. Delete all the text in your text and upload to the micro controller. 
 
 ```
-Error Message HERE
+core.a(main.cpp.o): In function `main':
+/usr/share/arduino/hardware/arduino/cores/arduino/main.cpp:11: undefined reference to `setup'
+/usr/share/arduino/hardware/arduino/cores/arduino/main.cpp:14: undefined reference to `loop'
+collect2: error: ld returned 1 exit status
+
 ```
 
 Again the IDE throws an error. 
