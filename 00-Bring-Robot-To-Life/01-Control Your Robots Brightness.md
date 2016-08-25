@@ -59,7 +59,9 @@ Void setup() {
 
 This shows the correct syntax for declaring (or creating) a function called **setup**.  In arduino some functions like **digitalWrite** are already defined so there’s no need to define them in your sketch. You must *or* can define other functions for yourself.  **setup** and **loop** are the two functions you must declare in every sketch that you write and together these form the basic structure of an arduino sketch. 
 
-{ figure showing the  statement with explanations}
+
+![Arduino Tutorials](https://github.com/RaghadHAV/arduino-tutorials/blob/master/Figures/setuploop.png)
+Format: ![Alt Text](url)
 
 N.B. Add explaniation inspired by SM intro book p34 in here:
 The word “void” indicates that nothing is returned by the function. Some functions return values whiles others do not. 
