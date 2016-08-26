@@ -68,7 +68,7 @@ This shows the correct syntax for declaring (or creating) a function called **se
 
 
 ![Arduino Tutorials](https://github.com/RaghadHAV/arduino-tutorials/blob/master/Figures/setuploop.png)
-
+Format: ![Alt Text](https://github.com/RaghadHAV/arduino-tutorials/blob/master/Figures/setuploop.png)
 The word “void” indicates that nothing is returned by the function. Some functions return values whiles others do not. The name of the function comes after the keyword "void" followed then by parentheses to contain arguments if there are any, in our case there are none. A curly braces are used to include the things to happen when the function is called. These curly braces and the code are all together known as a "Block".
 
 When the arduino sketch starts running, there are things need to be done only once therefore you use "setup" function to define it. Whereas, there are other things need to be happened continuously and for this purpose you use the function "loop".
