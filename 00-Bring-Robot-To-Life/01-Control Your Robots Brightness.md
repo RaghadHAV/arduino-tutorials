@@ -35,7 +35,7 @@ collect2: error: ld returned 1 exit status
 
 Again the IDE throws an error. 
 
-Now open **step3.ino** (replace with proper name later). And try uploading this.  Whilst this sketch doesn't have a single useful command it does enough for the IDE code checker to be uploaded to the microcontroller without error. 
+Now open **Basic-Structure.ino**. And try uploading this.  Whilst this sketch doesn't have a single useful command it does enough for the IDE code checker to be uploaded to the microcontroller without error. 
 
 ```
 Binary sketch size: 444 bytes (of a 32,256 byte maximum)
@@ -45,7 +45,14 @@ Binary sketch size: 444 bytes (of a 32,256 byte maximum)
 Lets look closer at the standard code that forms the basis of every working sketch. Firstly lets look at the comments:
 
 ```
-Comments section put here
+//This is a one line comment 
+
+/*this 
+is 
+a multi-line
+comment
+*/
+
 ```
 
 In most programming languages specific character combinations are used to signify comments. These are ignored by the compiler (or parser) and they are used only to help us humans.  In C a multi-line comment is started with **/\*** and ended with **\*/** and single line comments are signified with **//**.  Use comments as much as you can to help yourself and others understand and follow your code.
@@ -61,19 +68,53 @@ This shows the correct syntax for declaring (or creating) a function called **se
 
 
 ![Arduino Tutorials](https://github.com/RaghadHAV/arduino-tutorials/blob/master/Figures/setuploop.png)
-Format: ![Alt Text](url)
 
-N.B. Add explaniation inspired by SM intro book p34 in here:
-The word “void” indicates that nothing is returned by the function. Some functions return values whiles others do not. 
+The word “void” indicates that nothing is returned by the function. Some functions return values whiles others do not. The name of the function comes after the keyword "void" followed then by parentheses to contain arguments if there are any, in our case there are none. A curly braces are used to include the things to happen when the function is called. These curly braces and the code are all together known as a "Block".
+
+When the arduino sketch starts running, there are things need to be done only once therefore you use "setup" function to define it. Whereas, there are other things need to be happened continuously and for this purpose you use the function "loop".
+So, what do we need to put inside "setup" function that will be ran only once when the sketch starts? Let's see:
+
+```
+void setup()
+{
+  pinMode(13, OUTPUT);
+  digitalWrite(13,High);
+}
+
+void loop() 
+{
+
+}
+
+```
+
+The "pinMode" and "digitalWrite" ate built-in function (already defined function). pinMode function set a specific pin in the arduino to be either input or output. In this example we set the pin number 13 to be output. The digitalWrite will set this pin number to a HIGH which is the pin of the LED on the arduino broad. If you run the code above, the LED will light on/off once!
+Now, let's make the LED light on/off continuously. To do this we use loop function:
+
+```
+void setup()
+{
+  pinMode(13, OUTPUT);
+  
+}
+
+void loop() 
+{
+digitalWrite(13,High);
+delay(500);
+digitalWrite(13,LOW);
+}
+
+```
 
 ####Learn To Get The Help You Need
-It is possible to learn just about anything from freely available resources on the internet. The key question is knowing which resoruces to use. This course is complete and we believe provides the fastest and most powerful way to learn. There is though one  resource that we recommend is used for enhancing and suporting your learning on this course. 
-- [Arduino Language Reference](www.arduino.cc/en/Reference/Setup) This is a concise and well written guide on the arduino language. As the course prgresses we'll refer to relevant pages on it. Please end by taking a look at the Language Reference Site and the descriptions for the **setup()** and **loop** functions in particular.  As the course progresses further references will be made to this resource. 
+It is possible to learn just about anything from freely available resources on the internet. The key question is knowing which resoruces to use. This course is complete and we believe provides the fastest and most powerful way to learn. There is though one  resource that we recommend is used for enhancing and supporting your learning on this course. 
+- [Arduino Language Reference](www.arduino.cc/en/Reference/Setup) This is a concise and well written guide on the arduino language. As the course progresses we'll refer to relevant pages on it. Please end by taking a look at the Language Reference Site and the descriptions for the **setup()** and **loop** functions in particular.  As the course progresses further references will be made to this resource. 
 
 
 ##Programming Section
 
-The arduiono uses a subset of the C language. C is one of the most prolific and widely used languages in the world. The arduino subset of this makes it easier to learn the language quickly and start using it with physical computing.  All the code your learn for programming an arduino will form a solid basis for learning and extending your knowledge of C and many other related languages. The syntax and patterns of C have influenced many other languages including C++ python and javascript. This makes it quicker to learn other languages once you have become familiar with C. 
+The arduiono uses a subset of the C language. C is one of the most prolific and widely used languages in the world. The arduino subset of this makes it easier to learn the language quickly and start using it with physical computing.  All the code your learn for programming an arduino will form a solid basis for learning and extending your knowledge of C and many other related languages. The syntax and patterns of C have influenced many other languages including C++ python and JavaScript. This makes it quicker to learn other languages once you have become familiar with C. 
 
 ####What Kind Of Language is C?
  C is a compiled language that maps efficiently to machine instructions.  This ‘lower level’ language was first made to create the Unix Operating System in the early 1970’s.  IT is well suited for replacing applications that before would have used assembly language.  It is widely used for coding operating systems, as well as various applications for a wide range of systems, from supercomputers to small embedded systems. It has been around since the 70’s and is very standardized and stable.  Most of the code and applications on your Raspberry Pi, including Linux has been written in C. 
@@ -86,10 +127,11 @@ The arduiono uses a subset of the C language. C is one of the most prolific and 
 
 An example of a function that does return a value :
 
-Int Double ( int num) {
+```
+int Double ( int num) {
 Return num*2;
 } 
-
+```
 From the above you can see int being used to state that the function both takes as interger called num as a parameter and also returns an integer. Don’t worry if you don’t know yet what an integer is as this will be explained in step3. 
 
 
