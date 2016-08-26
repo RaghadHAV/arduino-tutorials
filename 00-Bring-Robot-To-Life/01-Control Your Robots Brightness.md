@@ -67,7 +67,7 @@ Void setup() {
 This shows the correct syntax for declaring (or creating) a function called **setup**.  In arduino some functions like **digitalWrite** are already defined so there’s no need to define them in your sketch. You must *or* can define other functions for yourself.  **setup** and **loop** are the two functions you must declare in every sketch that you write and together these form the basic structure of an arduino sketch. 
 
 
-![Arduino Tutorials](https://github.com/RaghadHAV/arduino-tutorials/blob/master/images/setuploop.png)
+![Arduino Tutorials](https://github.com/RaghadHAV/arduino-tutorials/blob/master/Images/setuploop.png)
 
 The word “void” indicates that nothing is returned by the function. Some functions return values whiles others do not. The name of the function comes after the keyword "void" followed then by parentheses to contain arguments if there are any, in our case there are none. A curly braces are used to include the things to happen when the function is called. These curly braces and the code are all together known as a "Block".
 
