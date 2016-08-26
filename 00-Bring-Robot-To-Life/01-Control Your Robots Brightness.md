@@ -88,8 +88,8 @@ void loop()
 
 ```
 
-The "pinMode" and "digitalWrite" ate built-in function (already defined function). pinMode function set a specific pin in the arduino to be either input or output. In this example we set the pin number 13 to be output. The digitalWrite will set this pin number to a HIGH which is the pin of the LED on the arduino broad. If you run the code above, the LED will light on/off once!
-Now, let's make the LED light on/off continuously. To do this we use loop function:
+The "pinMode" and "digitalWrite" are built-in function (already defined function). pinMode set a specific pin in the arduino to be either input or output. In this example we set the pin number 13 to be the output. The digitalWrite  sets this pin to be HIGH or LOW (light on or light off) which is the pin of the LED on the arduino broad. If you run the code above, the LED will light on/off once!
+Now, let's make the LED light on/off continuously. Modify the code to look like this: 
 
 ```
 void setup()
@@ -100,12 +100,42 @@ void setup()
 
 void loop() 
 {
-digitalWrite(13,High);
-delay(500);
-digitalWrite(13,LOW);
+  digitalWrite(13,High);
+  delay(500);
+  digitalWrite(13,LOW);
 }
 
 ```
+You need to call "pinMode" function only once, therefore you can leave it inside the setup. Notice that the project will still work if you move the "pinMode" inside the "loop", but it is better to use things once if you need them only once.
+The loop function consists of three lines: the first line is digitalWrite set the output to be hight (5V). "Delay" line would simply wait 500 millisecond. The third line set the output to be low. 
+Run the sketch and notice the output. Is it what you expected? Does the LED blinking? Yes, the LED is on all the time. Trace back the code, can you tell where is the problem?  
+Let's see:
+1. Set the output to bin number 13 in "setup".
+2. Set the pin to be high to turn the LED.
+3. 500 millisecond wait.
+4. Then turn the LED off. 
+5. Run the "loop" again, to turn the LED on.
+
+Wait! in step 4 there is no time for the LED to be off, because this very fast and the next thing would happened is turning the LED on again in step 2. Correct! you need to wait sometime before turning the LED on again. 
+Edit the code to look like this:
+
+```
+void setup()
+{
+  pinMode(13, OUTPUT);
+  
+}
+
+void loop() 
+{
+  digitalWrite(13,High);
+  delay(500);
+  digitalWrite(13,LOW);
+   delay(500);
+}
+
+```
+Now run the sketch again. You can see the LED blinking on and off every one second.
 
 ####Learn To Get The Help You Need
 It is possible to learn just about anything from freely available resources on the internet. The key question is knowing which resoruces to use. This course is complete and we believe provides the fastest and most powerful way to learn. There is though one  resource that we recommend is used for enhancing and supporting your learning on this course. 
