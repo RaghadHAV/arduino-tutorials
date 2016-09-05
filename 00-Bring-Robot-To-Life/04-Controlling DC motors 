@@ -1,16 +1,16 @@
-######Controoling a Motor 
+##Controoling a Motor 
 You have seen so far how to use the Arduino to control the LED by turn it on/off and control its brightness using the PWD. How about trying to control the Motor? 
 
 The motor you will work on is called DC motor( explain in different lesson)
 
-###What is the DC motor
+###What is the DC motor 
 The Direct current or DC is the easiest use and the most common type of motor. DC has two leads one is positive and the other one is negative. The motors generally need too much current out put from the digital pin of the Raspberry pi or the Arduino. Therefore, a resistors is used to control this current and allow only a small amount of the current from the Arduino or the raspberry to control a bigger current to the motor.
 
 
-### Using PWM to control the speed
+##Using PWM to control the speed
 The Pulse-width modulation(PWM) approach that you have used before to control the brightness can be used also to control the speed of the motors. 
 
-##The Hardware 
+####The Hardware 
 We are going to use the breadboard to show how to build the circuit. 
 
 1- An arduino board
@@ -31,6 +31,6 @@ The transistor needs to be placed correctly in the breadboard where the flat sid
 It is worth mentioning that You could do this experiments in both Arduino and raspberry pi.
 
 
-###Controlling a Stepper Motor
+##Controlling a Stepper Motor
 
 

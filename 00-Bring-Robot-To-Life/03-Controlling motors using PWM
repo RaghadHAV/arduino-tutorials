@@ -1,9 +1,9 @@
-#####What is the servo motors? 
+##What is the servo motors? 
 The servo motors (or servos) ----- You can found these motors many places: from toys to home electronics to cars and air-planes. it can be used to control steering in the remote control vehicles, or control the angles of surface due to the its ability to rotate through about 180 or sometimes continuous rotation, and of course robot wouldn't be exist without the servo motors. 
 (need a picture for a servo)
 
 
-### How does Servomotors work?
+###How does Servomotors work?
 Servo motors consist of:
  1- Small direct current(DC) which spin at high rotation per minutes but give out very low torque (it is a twisting force something smiler when you open a jar, you in fact apply a torque). 
 
@@ -19,6 +19,6 @@ This is why the servos is simple and useful to use for many robotic application 
 
 
 1- Connect the black wire of the servo to the ground GND of the arduino. 
-2-Connect the red wire of the servo to the +5V pin of the arduino. 
+2- Connect the red wire of the servo to the +5V pin of the arduino. 
 3- Connect the yellow/white wire of the servo to the digital pin on the arduino.
 
