@@ -17,7 +17,7 @@ Machines do not yet speak English, Spanish, or other human languages.   Programm
 
 All you need to do is follow the rules of the language and practice writing code.   As soon as you learn the language you'll be  commanding your robots in no time at all! 
 
-The following steps are focused on giving you the foundations and basics of programming in C. For more details of the particular language wer're using and how that compares to other languages please see the **programming** tab. 
+The following steps are focused on giving you the foundations and basics of programming in C. For more details of the particular language we're using and how that compares to other languages please see the **programming** tab. 
 
 
 ##### HOT TIP
@@ -40,6 +40,9 @@ Now open **Basic-Structure.ino**. And try uploading this.  Whilst this sketch do
 ```
 Binary sketch size: 444 bytes (of a 32,256 byte maximum)
 ```
+#### Hardware required for the Blink lesson 
+(explain before the figure)
+ ![Arduino Tutorials](https://github.com/RaghadHAV/arduino-tutorials/blob/master/Images/blink.png)
 
 ####Sketch fundamentals
 Lets look closer at the standard code that forms the basis of every working sketch. Firstly lets look at the comments:
@@ -108,7 +111,7 @@ void loop()
 ```
 You need to call "pinMode" function only once, therefore you can leave it inside the setup. Notice that the project will still work if you move the "pinMode" inside the "loop", but it is better to use things once if you need them only once.
 The loop function consists of three lines: the first line is digitalWrite set the output to be hight (5V). "Delay" line would simply wait 500 millisecond. The third line set the output to be low. 
-Run the sketch and notice the output. Is it what you expected? Does the LED blinking? Yes, the LED is on all the time. Trace back the code, can you tell where is the problem?  
+Run the sketch and notice the output. Is it what you expected? Is the LED blinking? So, the LED is on all the time. Trace back the code, can you tell where is the problem?  
 Let's see:
 1. Set the output to bin number 13 in "setup".
 2. Set the pin to be high to turn the LED.
@@ -131,7 +134,7 @@ void loop()
   digitalWrite(13,High);
   delay(500);
   digitalWrite(13,LOW);
-   delay(500);
+  delay(500);
 }
 
 ```
