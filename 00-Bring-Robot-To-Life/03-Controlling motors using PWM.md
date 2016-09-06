@@ -42,7 +42,7 @@ void setup()
 { 
   myservo.attach(servopin);  // attaches the servo on pin called servopin which is =9 to the servo object 
   myservo.write(90);         //set the current servo angle to 90
-  Serial.begin(9600);        //This command enavle you to use the serial monitor to input values
+  Serial.begin(9600);        //This command enable you to use the serial monitor to input values
   Serial.pringln("Enter the value of the angle in degree");   //This is a message instructs the user for what to do during the running time  
 
 } 
@@ -57,4 +57,4 @@ void loop()
 
 ```
 
-After you upload the sketch to the arduino board, the motor arm should spin by its defoalt value 90. To insert the desired value for the abgle you need to open the serial monitor and you should be able to input values between 0-180. 
+After you upload the sketch to the arduino board, the motor arm should spin by its default value 90. To insert the desired value for the angle you need to open the serial monitor and you should be able to input values between 0-180. 
