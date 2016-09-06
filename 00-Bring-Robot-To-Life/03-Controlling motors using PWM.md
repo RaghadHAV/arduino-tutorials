@@ -16,7 +16,7 @@ To simplify the concept, imagine you instruct a friend for where your you wants 
 This is why the servos is simple and useful to use for many robotic application since it has this automatic seeking behaviour, which mean you need only to tell what you wants to be done and the servos to the rest easily. 
 
 
-###
+
 
 1- Connect the black wire of the servo to the ground GND of the arduino. 
 2- Connect the red wire of the servo to the +5V pin of the arduino. 
