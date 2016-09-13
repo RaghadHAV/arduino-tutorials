@@ -1,7 +1,7 @@
 ### What is Stepper Motor
 Each type of motor convert power, for example the electric motor responsible for converting the electricity into motion. Stepper motor converts the electricity into rotation. The stepper motors are a DC motors that rotates in a series of discrete steps - very precise angles- under the control of a precise motor controller. This controller can control in a very accurate way, how far and how fast the stepper motor will rotate . The motor controller sends the commands as pulses to the motor.
 
- If you think of the robot This means, in case of turning then by counting the steps of the motor you could tell how much it has turned. For example, imagine you make an electric-powered robot to grab you a bottle of water, this robot arm moves in exact number of degree. You need to use an electric motor to make it turn when you switch the power on. The problem here is that there is no way to to know how much the angle of the motor(or arm) has moved because it depends on different reasons, from the power of the motor to even the direction of the wind. The issue is that the motor is moving in an arbitrary way that make it hard for a robot to do what you want exactly, your bottle is going to end up on the floor eventually. 
+ For example, if some robot performs a turning operation then by counting the steps of the motor you could tell how much it has turned. For example, imagine you make an electric-powered robot to grab you a bottle of water, this robot arm moves in exact number of degree. You need to use an electric motor to make it turn when you switch the power on. The problem here is that there is no way to to know how much the angle of the motor(or arm) has moved because it depends on different reasons, from the power of the motor to even the direction of the wind. The issue is that the motor is moving in an arbitrary way that make it hard for a robot to do what you want exactly, your bottle is going to end up on the floor eventually. 
 
 You can imagine now how useful the stepper motor could be due to its accuracy rather than spinning round by random amount. The stepper motors are also commonly used in 3D printers to position the paper accurately. 
 
@@ -12,7 +12,7 @@ The stepper motor has two main parts; There is inside "rotor" of it that is turn
 
  In a stepper motor, the rotor is a permanent magnet. The stator contains coils of wire(winding) act as electromagnets when an electrical current is passed through them. The rotor spins inside the stator and it is droved by alternating which the electromagnets coil has a current running through it.
 
- ![Arduino Tutorials](https://github.com/RaghadHAV/arduino-tutorials/blob/master/Images/steppermotor.png)
+ ![Arduino Tutorials](https://github.com/RaghadHAV/arduino-tutorials/blob/master/Images/steppermotor.jpg)
 
 
 The stepper motor controllers works differently, some work in an open loop while others work in a close loop. The deference between the two systems is that the open loop system send the power in a constant rate to the motor assuming the consistency of rotating field that the rotor follows. While in the closed system, use the feedback approach which mean testing the motor ability of bearing before sending more power, therefore the information is send back to the controller to make the necessary adjacent. Unlike the open loop system where no feedback used. 
