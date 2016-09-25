@@ -3,23 +3,45 @@ This index outlines the full Pibot physical computing course. The aim is that it
 
 Each step to robot mastery will have a physical **doing** element, a **knowledge** elements as well as a programming **skill** element. This way *physical computing*, *electronics* and *programming*, are learned at the same time. 
 
+
+**Raghad Update the below structure with your new plans**
+
 ##1: Gaining Robot Powers. Bringing your Robot to Life
 
-1. **Let there be light!** Wire up an LED and make it blink! *What is a MicroController?*
-2. **Controll your robots brightness** First steps in speaking robot (aka learning programming in C)
-3. **The machines can do your work** Let the code control brightness. *Learn first machine signals*
-4. **Switch on** Let humans be in control.*Learn how to make a function*
-5. **Show us your moves** Give your robot muscles. *converting data to action*
-6. **Learning to move** Control high power motors.*Making changes in the world* 
+- 0 **Let there be light!** Wire up an LED and make it blink! *What is a MicroController?*
+- 1 **What is speaking robot?** First steps in coding and speaking robot (aka learning programming in C)
+- 2 **Controll your robots brightness** Introducing PWM and Analogue Electronics.
+- 3 **Change the world** Let the code control a servo.  *Learn first machine signals*
+- 4 **Super Powers** Do big things with little signals (aka Give your robot muscles). *Learn how to trigger from user input (e.g. a button)*
+- 5 **Show us your moves** Learn to co-ordinate using functions. *translate motor actions into co-ordinated movement*
+
+### Skill Element for Part 1
+
+Think about how to introduce programming 1 step at a time each lesson should add something new.
+
+- 00 Just upload an existing sketch and run it.  This is enough and shows and example and how code flows from Raspberry Pi to Micro.
+- 01 Intro to coding in the IDE.  Learn by writing english and seeing that this will not work. Learn that programming has a very specific syntax. Learn what a variable is. Learn how to turn digital pins on and off.
+
+
+- 02 PWM. Lean how code can make calculations.  e.g. A = B + C 
+- 03 Servos. Create a map of values to angles. 
+- 04 DC Motors from Button press. Learn actions condtional on an event (e.g. button push)
+- 05 Learn abrstaction through functions. Use movement functions (forward, back, turn left, turn right)  to delegate motor actions (power and time).
+
+
+
+
 
 ##2 Harmony. Co-ordinating and Extending Robot Powers 
 **Not yet defined**   
--Incorporate the remaining hardware and sensors.( Stepper Motor, Neopixels & Ultrasound)
--Introduce Libraries and using code in a modular way.e.g.
+- Incorporate the remaining hardware and sensors.( Stepper Motor, Neopixels & Ultrasound)
+- Introduce Libraries and using code in a modular way.e.g.:
 7. **Dancing** Creating code modules. *Use all your robot powers together*
--Learn the benefit of libraries and modular design. Turn previous lessons (leds, servos, DC motors) into libraries and make sketch that combines all of them into one.
+- Learn the benefit of libraries and modular design. Turn previous lessons (leds, servos, DC motors) into libraries and make sketch that combines all of them into one. 
 8. **Sensing the world** Measure and distance. *Filtering data to remove errors*
+- Introduce the concept of feedback at a higher level using the serial interface. 
  Other Things to measuring Temperature -Potential Additions: -Measuring Humidity , -3 Axis accelerometers -IMU -Digital compass -GPS modules -Encoders
+
 
 ##3: Control is key. Change the world in the way that you want. 
 **Not yet defined**  
@@ -30,6 +52,3 @@ Each step to robot mastery will have a physical **doing** element, a **knowledge
 ##4: Set your robot free! Automate and Remote Control
 **Not yet defined** 
 Covers how to create an API to the robot over serial.  This can then give all its control, command, measurement capabilities over to the Raspberry Pi.  The raspberry Pi can then use Python scripting.  This is a further demonstration of abstraction.  
-
-
-
