@@ -217,9 +217,34 @@ void loop()
 }
 ```
 
-The variable "i" set to 0, then check if "i" is less or equal to 255, then the two lines of code inside the curly bracket are execute it. Then the incrementing for "i" is happens only after the code in the loop is run. Try now to write it in and run the code for a better understanding. 
+The variable "i" set to 0, check if "i" is less or equal to 255, if true then the two lines of code inside the curly bracket are execute it. Then the incrementing for "i" is happens only after the code in the loop is run. Try now to write it in and run the code for a better understanding. 
 
 ##While loop 
+"While" is another type of loop and can give the same goal as "for" loop. "While" loops will loop continuously to execute the code, until the expression inside its parenthesis () is no longer true. There must be an update variable that keep changing, otherwise the while loop will never exit. The structure for the " while " loop is as follow:
 
+```
+while(expression){
+  // statement(s)
+}
+```
+Example:
 
+```
+int led = 9;
+
+void setup()
+{
+   pinMode(led, OUTPUT);
+}
+int i=0;
+
+void loop()
+{
+  while(i<=255){
+  analogWrite(led, i);
+      delay(10);
+      i++;
+}
+}
+```
 

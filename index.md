@@ -20,7 +20,20 @@ Each step to robot mastery will have a physical **doing** element, a **knowledge
 Think about how to introduce programming 1 step at a time each lesson should add something new.
 
 - 00 Just upload an existing sketch and run it.  This is enough and shows and example and how code flows from Raspberry Pi to Micro.
-- 01 Intro to coding in the IDE.  Learn by writing english and seeing that this will not work. Learn that programming has a very specific syntax. Learn what a variable is. Learn how to turn digital pins on and off.
+- 01 Intro to coding in the IDE.  Learn by writing English and seeing that this will not work. Learn that programming has a very specific syntax. Learn what a variable is. Learn how to turn digital pins on and off.
+
+C Learning structure:
+- Basic Syntax (identifier, semicolon, comments, keywords )
+- Data type
+- Variables
+- Operators ( ex: <, ==, != and so on)
+- Decision making (if, if-else, switch)
+- Loops 
+- Functions
+- Local, global variables
+- Arrays 
+- Strings
+
 
 
 - 02 PWM. Lean how code can make calculations.  e.g. A = B + C 
