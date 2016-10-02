@@ -3,7 +3,7 @@ You have seen so far a small lines of code in an arduino sketch and you can mana
 ######What is a function  
 A function is a group of code lines that perform a specific task and can be called any where in your program. You already worked with a function such as "digitalWrite" and "PinMode", you just called it in your sketch but not bothered to build it because it is already built-in functions, its bodies are written somewhere else separately. In this lesson you will learn to build it all by yourself. 
 
-The function consist of a function " deceleration" this is where you tell the program about your function name, a return type and parameters. 
+The function consist of a function *deceleration* this is where you tell the program about your function name, a return type and parameters. 
 And the other part is called function "definition" where you write the body of your function.
 To explain these parts more clearly let's look at the structure:
 
@@ -66,7 +66,31 @@ void LED_Blinking(int d)
 ```
 In this example notice when we called the function we supplied a parameter inside the parenthesis. So we modify the delay period value to be known only inside the loop function, but when we use it in a different function we need to pass it as parameters. So, delayPeriod variable is equal to 500, this value will be passed to the variable "d" that acts as the holder for this value that going to be used inside the function body.
 
-##### Type of variables
+An example of a function that does return a value :
+
+```
+int Double ( int num) {
+Return num*2;
+} 
+```
+From the above you can see int being used to state that the function both takes as interger called num as a parameter and also returns an integer. Don’t worry if you don’t know yet what an integer is as this will be explained in step3. 
+
+See the Arduino Language Reference for further functions.
+
+Questions :
+What does the isDigit() function do:
+A)
+B)
+C)
+
+What unit of time does the delay() function take as a parameter?
+
+A) seconds 
+B) milli seconds
+C) hours 
+
+
+
 
 ##Arrays
 You have seen so far the variables that store single value in arduino memory. Sometimes you need to use very big data and if you need to store it each with single variable, this would require using too many variables. For example if you want to create many LED, you would normally create different variables individuality for each LED as follow:
