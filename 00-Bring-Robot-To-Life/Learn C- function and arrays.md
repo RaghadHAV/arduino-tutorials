@@ -151,3 +151,4 @@ So in this step "digitalWrite(le[0],HIGH)" you actually indicating the led in th
 
 However, although the number of array elements are 5 so you can access the locations between 0-4, but if you tried to access the location 5 or any number out of the range, you may get a value but this in fact will cause a fatal error during program execution. 
 
+
