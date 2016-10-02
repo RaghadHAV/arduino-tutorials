@@ -3,7 +3,7 @@ You have seen so far a small lines of code in an arduino sketch and you can mana
 ######What is a function  
 A function is a group of code lines that perform a specific task and can be called any where in your program. You already worked with a function such as "digitalWrite" and "PinMode", you just called it in your sketch but not bothered to build it because it is already built-in functions, its bodies are written somewhere else separately. In this lesson you will learn to build it all by yourself. 
 
-The function consist of a function *deceleration* this is where you tell the program about your function name, a return type and parameters. 
+The function consist of a function **deceleration** this is where you tell the program about your function name, a return type and parameters. 
 And the other part is called function "definition" where you write the body of your function.
 To explain these parts more clearly let's look at the structure:
 
