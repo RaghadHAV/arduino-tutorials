@@ -13,7 +13,7 @@ The Pulse-width modulation(PWM) approach that you have used before to control th
 ####The Hardware 
 We are going to use the breadboard to show how to build the circuit to control a motor:
 
-1- An arduino board
+1- An PiBot Board
 2- Transistor
 3- Diode 
 4- resistor
@@ -24,11 +24,11 @@ We are going to use the breadboard to show how to build the circuit to control a
 
 The breadboard is shown in the figure bellow:
 
- ![Arduino Tutorials](https://github.com/RaghadHAV/arduino-tutorials/blob/master/Images/dcmotor.png)
+ ![Arduino Tutorials](https://github.com/RaghadHAV/arduino-tutorials/blob/master/Images/.png)
 
 The transistor needs to be placed correctly in the breadboard where the flat side with the writing on should be in the-right hand side. The diode also needs to be positioned correctly where the one of its end with the stripe should face the top of the board.
 
-The ground(GND) connection (represents as the yellow wire in the figure) provides the zero voltage for the Arduino and the breadboard, while the control connection (represents as the blue wire ) will be responsible for turning the motor on and off depends on the availabe volatge weather it will be over 2V to keeps the motor on or bellow to turn it off.
+The ground(GND) connection (represents as the yellow wire in the figure) provides the zero voltage for the PiBot and the breadboard, while the control connection (represents as the blue wire ) will be responsible for turning the motor on and off depends on the availabe volatge weather it will be over 2V to keeps the motor on or bellow to turn it off.
 Now the sketch you will use is similar to the one you used to control the LED in a previews tutorial, which is the one bellow:
 ```
 void setup()

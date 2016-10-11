@@ -27,7 +27,7 @@ One important note to make here, make sure you don't power the circuit while you
   In addition, the pin number 9 demands a resistor to control the amount of current coming into the LED. 
 
 
-  "We need a figure to show the circuit maybe?!!1"
+  "Do We need a figure to show the circuit ?!"
 
   Now open a new file in the arduino and write down the follwing code: 
 
