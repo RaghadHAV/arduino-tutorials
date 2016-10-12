@@ -1,5 +1,5 @@
-##What is the servo motors? 
-The servo motors (or servos) is a compilation of stepper motors and DC motors which we are going to explain later in this tutorial. You can found these motors many places: from toys to home electronics to cars and air-planes. it can be used to control steering in the remote control vehicles, or control the angles of surface due to the its ability to rotate through about 180 or sometimes continuous rotation, and of course robot wouldn't be exist without the servo motors. 
+##What is the servo motor? 
+The servo motors (or servos) are a compilation of stepper motors and DC motors which we are going to explain later in this tutorial. You can found these motors many places: from toys to home electronics to cars and air-planes. it can be used to control steering in the remote control vehicles, or control the angles of surface due to the its ability to rotate through about 180 or sometimes continuous rotation, and of course robot wouldn't be exist without the servo motors. 
 
 Servo motors come in a different shapes and sizes. Mainly it has tree wires with a different colours, red, black/brown and yellow. The red one is connecting to power, the black/brown to the ground and the yellow wire is connected to the signal.
 
