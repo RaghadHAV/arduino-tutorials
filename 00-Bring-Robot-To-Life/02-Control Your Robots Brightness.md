@@ -6,9 +6,9 @@ To do so, they key is to control the power which is sent to the LED, the more po
 ###Welcome to Pulse-Width Modulation (PWM)
 Pulse-Width Modulation (PWM) is a smart way to convert the digital signal to analog signal. So you need to know first that the Microcontroller can output signal of only high (usually 5V) or low (ground 0V), and the analog volt can be 0v or 5v or any number in between. Notice that it doesn't have to be until 5v, it could 3.3v for example so it could be high at certain amount of time and goes down to a certain amount of time in a square way. We can change the proportion of time when the signal is high compared to the time when te signal is low over a consistent time interval. See figure 2.1 and 2.2  
 
-![Arduino Tutorials](https://github.com/RaghadHAV/arduino-tutorials/blob/master/Images/pwm2.png)
+![Arduino Tutorials](https://github.com/RaghadHAV/arduino-tutorials/blob/master/Images/pwm2.png) *Duty Cycle Examples*
 
-![Arduino Tutorials](https://github.com/RaghadHAV/arduino-tutorials/blob/master/Images/pwm1.png)
+![Arduino Tutorials](https://github.com/RaghadHAV/arduino-tutorials/blob/master/Images/pwm1.png) * Period and pulse explaining*
 
 
 The figures above shows some concepts we need to define here. First, when the signal is high this called "ON time". The percentage of time when that the digital signal is ON over the period of time is called **Duty cycle**. Say for example if the digital signal spends half of the time ON and the other half as OFF, then we say the duty cycle is 50% as shown in figure 2.2.
