@@ -13,7 +13,7 @@ This tests all the arduino functionality of the system and covers:
 5. t-PWM (test PWM on D5 and D6) 
 6. t-Interupts (test the interupt functionality from the motor encoders)
 7. t-pixels (test the neopixels)
-8. t-motors (test the motors left and right)
+8. t-motors (test the motors left and right) PASSED
 9. t-ultrasound (test ultrasound value and display through serial console)
 10. t-AnalogRead (read an analogue value from A1(15),A2(16),A3(17)
 
