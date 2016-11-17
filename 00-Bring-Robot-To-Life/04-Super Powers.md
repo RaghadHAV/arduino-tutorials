@@ -1,13 +1,13 @@
-### User input 
-#### push button 
+## User input 
+### push button 
 We have talked about only the output signal so far, in this lesson we are going to talk about the input. **push button** is one of the simplest and most common digital input. 
 
 ![Arduino Tutorials](https://github.com/RaghadHAV/arduino-tutorials/blob/master/Images/pushbutton.png)
 
-###How push button works? 
+####How push button works? 
 The way push button work is when the user press it, the voltage goes LOW and accordingly, the arduino read it and react. 
 
-###The circuit 
+####The circuit 
 1x Breadboard
 1x PiBot
 1x LED
@@ -17,7 +17,7 @@ The way push button work is when the user press it, the voltage goes LOW and acc
 (Put a fritzing digram here)
 
 
-###The code 
+####The code 
 Open a new arduino sketch, copy and paste the following code:
 
 ```
@@ -56,7 +56,7 @@ buttonState=digitalRead(Button);
 
 **digitalRead** this function used to read and return the digital input which is either HIGH or LOW depends if the voltages is 5V or 0v. The returned value will be stored at the variable (buttonState).
 
-##Welcome to "if statement"
+####Welcome to "if statement"
  If statement allows you to control whether the program should enters a specific section of code or not depending on some condition/s. Easily, if the condition met, then it does something. If the condition is not met, it does nothing.
 
  Let's take an example here:
@@ -105,7 +105,7 @@ Beware of using the double sign of "=" represent the comparison between two vari
 
 
 Now back to the push button example,  if this condition met then the code inside the curly bracket with be execute otherwise the program skips over the code and jump to "else" 
-##Else statement
+#####Else statement
 Sometimes when the condition in "if statement" is false, it is good idea to have another code to be executed instead. The "else" statement offers this possibility by allowing the program to execute the code that comes after the "if statement" code section. The "else" statement look like this:
 
 ```
