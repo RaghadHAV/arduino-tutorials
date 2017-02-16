@@ -3,7 +3,7 @@ The servo motors (or servos) are a compilation of stepper motors and DC motors w
 
 Servo motors come in a different shapes and sizes. Mainly it has tree wires with a different colours, red, black/brown and yellow. The red one is connecting to power, the black/brown to the ground and the yellow wire is connected to the signal.
 
- ![Arduino Tutorials](https://github.com/RaghadHAV/arduino-tutorials/blob/master/Images/servomotors.jpg)
+ ![Arduino Tutorials](https://github.com/RaghadHAV/arduino-tutorials/blob/master/Images/servomotors.png)
 
 ###How does Servomotors work?
 Servo motors consist of:
